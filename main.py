@@ -10,6 +10,14 @@ import hangman_art
 #         letter at that position of blank_list
 # TODO-6: Use while loop to let the user to guess again. The loop should only run if blanks are left and
 #         and the user has not guessed all the letter in the word
+# TODO-7: Create variable called lives to keep track of number of lives left
+# TODO-8: If guess is not a letter in chosen word, then reduce live by 1 and once lives goes to zero
+#         it should print you lose
+# TODO-9: Join all the elements inlist and turn it into a string
+# TODO-9: Print the ascii art from stages that corresponds to number of lives the user has remaining
+# TODO-9: If the user has entered the letter they have already entered print letter and let them know
+#         without losing their lives
+# TODO-10: if letter is not in chosen word print out letter and let them know it's not in chosen word
 stages = hangman_art.stages_of_lives
 chosen_word = (random.choice(hangman_words.words_list)).lower()
 blanks_left = True
